@@ -16,7 +16,6 @@ import TimeLine from "../../components/Sections-Components/TimeLine";
 import Tooltip from "../../components/Sections-Components/Tooltip";
 import VerticalAccordion from "../../components/Sections-Components/VerticalAccordion";
 import ButtonsWithInfo from "../../components/Sections-Components/ButtonsWithInfo";
-import ButtonsWithInfoAndCard from "../../components/Sections-Components/ButtonsWithInfoAndCard";
 
 // Backgrounds
 import smilingWomanImg from "../../assets/images/smiling-bussiness-woman.png";
@@ -40,6 +39,12 @@ import retrancaImg from "../../assets/images/logo/retranca.png";
 
 // assinatura (final)
 import sign from "../../assets/images/logo/logo.png";
+
+//datas
+import primeiraData from "../../data/primeiraData";
+import segundaData from "../../data/segundaData";
+import terceiraData from "../../data/terceiraData";
+import quartaData from "../../data/quartaData";
 
 const Home = () => {
   return (
@@ -74,7 +79,7 @@ const Home = () => {
               <div className="flex">
                 <div className="info-section">
                   <h1 style={{ color: "#660099" }}>Estudo de caso Hyundai</h1>
-                  <p style={{ color: "black" }}>
+                  <p style={{ fontSize: "1.875rem", color: "black" }}>
                     Durante a pandemia, a Hyundai verificou que precisava fazer
                     uma modernização no ambiente de trabalho dos seus
                     colaboradores. Com grande parte da equipe em home office,
@@ -106,7 +111,7 @@ const Home = () => {
           </Section>
           <Section customClass="bgWhite" lineBG="#FFFFFF">
             <Container>
-              <ButtonsWithInfo />
+              <ButtonsWithInfo data={primeiraData} isBgWhite={true} />
             </Container>
           </Section>
           <Section>
@@ -127,7 +132,7 @@ const Home = () => {
                 </div>
                 <div className="info-section" style={{ paddingLeft: "2rem" }}>
                   <h1>Estudo de caso Consul</h1>
-                  <p style={{ color: "white" }}>
+                  <p style={{ fontSize: "1.875rem", color: "white" }}>
                     A Consul procurou a Vivo Empresas em busca de tecnologia e
                     suporte especializado para os seus pontos de venda incluindo
                     uma loja virtual. Com o fortalecimento do relacionamento da
@@ -144,7 +149,7 @@ const Home = () => {
           </Section>
           <Section>
             <Container>
-              <ButtonsWithInfoAndCard />
+              <ButtonsWithInfo data={segundaData} isBgWhite={false} />
             </Container>
           </Section>
           <Section
@@ -158,7 +163,7 @@ const Home = () => {
                   <h1 style={{ color: "#660099" }}>
                     Estudo de caso Votorantim
                   </h1>
-                  <p style={{ color: "black" }}>
+                  <p style={{ fontSize: "1.875rem", color: "black" }}>
                     A Votorantim é uma holding com empresas que possuem
                     autonomia na contratação de serviços, porém no caso do
                     contrato LSP Microsoft, por envolver grandes volumes, a
@@ -190,7 +195,7 @@ const Home = () => {
           </Section>
           <Section customClass="bgWhite" lineBG="#FFFFFF">
             <Container>
-              <ButtonsWithInfo />
+              <ButtonsWithInfo data={terceiraData} isBgWhite={true} />
             </Container>
           </Section>
           <Section>
@@ -211,7 +216,7 @@ const Home = () => {
                 </div>
                 <div className="info-section" style={{ paddingLeft: "2rem" }}>
                   <h1>Estudo de caso Hospital São Camilo</h1>
-                  <p style={{ color: "white" }}>
+                  <p style={{ fontSize: "1.875rem", color: "white" }}>
                     Entender o momento de um setor que foi fortemente impactado
                     pela pandemia, em diversos aspectos, foi essencial para
                     atender a todos os desafios colocados na concorrência pelo
@@ -224,7 +229,7 @@ const Home = () => {
           </Section>
           <Section>
             <Container>
-              <ButtonsWithInfoAndCard />
+              <ButtonsWithInfo data={quartaData} isBgWhite={false} />
             </Container>
           </Section>
           <Section>
@@ -242,11 +247,7 @@ const Home = () => {
               transform: "matrix(-1, 0, 0, 1, 0, 0)",
             }}
           >
-            <img
-              src={assinaturas}
-              alt=""
-              className="assinatura"
-            />
+            <img src={assinaturas} alt="" className="assinatura" />
           </div>
         </div>
       </div>

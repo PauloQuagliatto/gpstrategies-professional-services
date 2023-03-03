@@ -8,11 +8,13 @@
   margin-top: 6rem;
   z-index: 1;
 }
-.tab-view-with-image .tab-view-with-image .tab-icons {
+.tab-view-with-image .tab-icons {
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 2.4rem;
 }
 
 .tab-view-with-image .tab-icons .icon {
@@ -20,57 +22,145 @@
   height: 4rem;
   color: white;
   background: #ff98b3;
+  box-shadow: 10px 10px 16px #bd4aff;
   padding: 2rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: ease-out 0.5s;
+  border: none;
 
   font-size: 1.5rem;
+}
+
+.tab-view-with-image .tab-icons .icon.active {
+  background-color: #ec3d7e;
 }
 
 .tab-view-with-image .tab-icons .icon:hover {
   background-color: #fa6b91;
 }
 
-.tab-view-with-image .tab-icons .icon .active {
-  background-color: #ec3d7e;
-}
-
-.tab-view-with-image .content-info {
+.tab-view-with-image .content {
   position: relative;
-  background-color: #fff;
+  width: 89.125rem;
   flex: 1;
   padding: 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   column-gap: 2rem;
   transition: all ease-out 0.5s;
 }
 
-.content-info {
-  flex-direction: column;
-}
-.tab-view-with-image .content-info svg {
-  width: 10rem;
-}
-
-.tab-view-with-image .content-info .text-area {
+.tab-view-with-image .content .text-area {
   flex: 1;
 }
 
-.tab-view-with-image .content-info .text-area p {
+.tab-view-with-image .content .text-area {
   font-size: 1.4rem;
 }
 
-.tab-view-with-image .content-info .text-area p {
-  font-size: 1.4rem;
-}
-
-.tab-view-with-image .content-info .text-area p:not(:last-child) {
+.tab-view-with-image .content .text-area p:not(:last-child) {
   margin-bottom: 1rem;
+}
+
+.content .controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content .controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.controls button img {
+  width: 3rem;
+  transition: 1s;
+}
+
+.controls button img:hover {
+  width: 3rem;
+  transform: scale(1.1);
+}
+
+.controls p {
+  margin: 0.3rem;
+  display: flex;
+  font-size: 2.5rem;
+  white-space: nowrap;
+}
+
+.controls button.next img {
+  transform: scaleX(1);
+  transition: 1s;
+}
+
+.controls button.next img:hover {
+  transform: scaleX(1);
+  transform: scale(1.1);
+}
+
+.buttons-with-info-and-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons-with-info-and-card-container h1 {
+  font-size: 3.75rem;
+  margin-top: 6.5rem;
+  margin-bottom: 2rem;
+}
+
+.buttons-with-info-and-card-container ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 5.8rem;
+}
+
+.card.no-joinha {
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  padding: 2.5rem 3.5rem 4.5rem 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .card-text {
+  margin-left: 2.5rem;
+}
+.card .card-text.no-joinha {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .card-text h1 {
+  margin-top: 1rem;
+  margin-bottom: 2.4rem;
+}
+
+.card .card-text p {
+  color: black;
+}
+.glow {
+  box-shadow: 0px 0px 30px 15px #bd4aff;
 }
 
 @media screen and (max-width: 768px) {
