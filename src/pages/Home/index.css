@@ -1,0 +1,137 @@
+img.retranca {
+  position: absolute;
+  width: 15rem;
+  left: 0;
+  top: 2rem;
+  z-index: 10;
+}
+
+
+.darken-section-end {
+  height: 17rem;
+  width: 100%;
+  margin-bottom: -8rem;
+  background: linear-gradient(180deg, rgba(102, 0, 153, 0) 0%, #660098 100%);
+  overflow: hidden;
+}
+
+.darker {
+  background: linear-gradient(180deg, rgba(18, 0, 27, 0) 0%, #060009 100%);
+}
+
+.maskara {
+  background: url(../../assets/images/google/workspace/assinatura/maskara.png);
+}
+
+.divMae {
+  width: 100vw;
+  height: auto;
+  background: rgb(103, 2, 154);
+  background: linear-gradient(
+    180deg,
+    rgba(103, 2, 154, 1) 0%,
+    rgba(56, 0, 84, 1) 100%
+  );
+}
+
+.click-expand-conceitos {
+  display: block;
+  width: 25%;
+  margin: 0 auto;
+  -webkit-box-shadow: 5px 5px 7px #b140f1;
+  -moz-box-shadow: 5px 5px 7px #b140f1;
+  box-shadow: 5px 5px 7px #b140f1;
+}
+
+.text-xl {
+  font-size: 2rem;
+}
+.justify-text-center {
+  text-align: center;
+}
+
+.flex {
+  width: 100%;
+  margin-top: 8.875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2;
+}
+
+.flex .info-section {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.info-section h1 {
+  font-size: 2.5rem;
+}
+
+.info-section p {
+  max-width: 85%;
+  margin-top: 4.5rem;
+  margin-bottom: 4.5rem;
+  font-size: 1rem;
+}
+
+.flex .info-section img {
+  width: 45%;
+}
+
+.flex .logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.flex .logo-section img {
+  width: 25rem;
+}
+
+.bgWhite {
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  section.wp-sm {
+    background-position: 80% center;
+  }
+  .flex {
+    max-width: calc(100% - 6.625rem);
+    justify-content: center;
+  }
+
+  .flex .info-section {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex .info-section h1 {
+    font-size: 2.5rem;
+    white-space: nowrap;
+  }
+  .flex .info-section p {
+    max-width: 100%;
+    margin-top: 3.5rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .flex .info-section img {
+    align-self: flex-start;
+    width: 75%;
+  }
+
+  .flex .logo-section {
+    display: none;
+  }
+}
+
+button {
+  cursor: pointer;
+}

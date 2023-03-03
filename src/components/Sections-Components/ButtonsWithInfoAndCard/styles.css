@@ -1,0 +1,34 @@
+.buttons-with-info-and-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.buttons-with-info-and-card-container ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 5.8rem;
+}
+
+.card {
+  padding: 2.5rem 3.5rem 4.5rem 4.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.card .card-text {
+  margin-left: 2.5rem;
+}
+.card .card-text h1 {
+  color: #660099;
+  margin-bottom: 2.4rem;
+}
+.card .card-text p {
+  color: black;
+}
+.glow {
+  box-shadow: 0px 0px 30px 15px #bd4aff;
+}

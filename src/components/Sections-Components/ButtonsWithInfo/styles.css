@@ -1,0 +1,97 @@
+.tab-view-with-image {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3rem;
+  margin-top: 6rem;
+  z-index: 1;
+}
+.tab-view-with-image .tab-view-with-image .tab-icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tab-view-with-image .tab-icons .icon {
+  width: 15rem;
+  height: 4rem;
+  color: white;
+  background: #ff98b3;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+
+  font-size: 1.5rem;
+}
+
+.tab-view-with-image .tab-icons .icon:hover {
+  background-color: #fa6b91;
+}
+
+.tab-view-with-image .tab-icons .icon .active {
+  background-color: #ec3d7e;
+}
+
+.tab-view-with-image .content-info {
+  position: relative;
+  background-color: #fff;
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+  transition: all ease-out 0.5s;
+}
+
+.content-info {
+  flex-direction: column;
+}
+.tab-view-with-image .content-info svg {
+  width: 10rem;
+}
+
+.tab-view-with-image .content-info .text-area {
+  flex: 1;
+}
+
+.tab-view-with-image .content-info .text-area p {
+  font-size: 1.4rem;
+}
+
+.tab-view-with-image .content-info .text-area p {
+  font-size: 1.4rem;
+}
+
+.tab-view-with-image .content-info .text-area p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .tab-view-with-image {
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+
+  .tab-view-with-image .tab-icons {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tab-view-with-image .tab-icons .icon {
+    --size: 4.5rem;
+    width: var(--size);
+    height: var(--size);
+  }
+
+  .tab-view-with-image .content-info {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}

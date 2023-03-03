@@ -1,3 +1,30 @@
+@font-face {
+  font-family: officina;
+  src: url('./assets/fonts/OfficinaSerif-Bold.woff2') format('woff2'),
+      url('./assets/fonts/OfficinaSerif-Book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: officina-bold;
+  src: url('./assets/fonts/OfficinaSerif-Bold.woff2') format('woff2'),
+      url('./assets/fonts/OfficinaSerif-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: officina-extra;
+  src: url('./assets/fonts/OfficinaSerifExtraBoldA.woff2') format('woff2'),
+      url('./assets/fonts/OfficinaSerifExtraBoldA.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +32,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {

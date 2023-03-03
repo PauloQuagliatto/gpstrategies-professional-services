@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
+
+// Chamar SCORM Provider
+
+// Components
+import Navbar from "./components/Navbar";
+
+// Rotas
+import Home from "./pages/Home";
+
+// Import SCORM Hook
+import useScorm from "./hooks/useScorm";
 
 function App() {
+  const { scorm } = useScorm();
+
+  useEffect(() => {
+    (async function () {
+      await scorm.init();
+    })();
+
+    scorm.setScore("100");
+  }, [scorm]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Routes>
+        <Route path="*" element={<Home />} />
+      </Routes>
     </div>
   );
 }
