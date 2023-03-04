@@ -5,7 +5,7 @@ import "./index.css";
 import Section from "../../components/Section";
 import Container from "../../components/Container";
 import Logo from "../../components/Sections-Components/Logo";
-import ButtonsWithInfo from "../../components/Sections-Components/ButtonsWithInfo";
+import MultipleCards from "../../components/Sections-Components/MultipleCards";
 
 // Backgrounds
 import smilingWomanImg from "../../assets/images/smiling-bussiness-woman.png";
@@ -27,10 +27,10 @@ import retrancaImg from "../../assets/images/logo/retranca.png";
 import sign from "../../assets/images/logo/logo.png";
 
 //datas
-import primeiraData from "../../data/primeiraData";
-import segundaData from "../../data/segundaData";
-import terceiraData from "../../data/terceiraData";
-import quartaData from "../../data/quartaData";
+import hyundaiData from "../../data/hyundaiData";
+import consulData from "../../data/consulData";
+import votorantinData from "../../data/votorantinData";
+import saoCamiloData from "../../data/saoCamiloData";
 
 const Home = () => {
   return (
@@ -97,7 +97,15 @@ const Home = () => {
           </Section>
           <Section customClass="bgWhite" lineBG="#FFFFFF">
             <Container>
-              <ButtonsWithInfo data={primeiraData} isBgWhite={true} />
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <MultipleCards data={hyundaiData} isBgWhite={true} />
+              </div>
             </Container>
           </Section>
           <Section>
@@ -135,7 +143,15 @@ const Home = () => {
           </Section>
           <Section>
             <Container>
-              <ButtonsWithInfo data={segundaData} isBgWhite={false} />
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <MultipleCards data={consulData} isBgWhite={false} />
+              </div>
             </Container>
           </Section>
           <Section
@@ -181,7 +197,15 @@ const Home = () => {
           </Section>
           <Section customClass="bgWhite" lineBG="#FFFFFF">
             <Container>
-              <ButtonsWithInfo data={terceiraData} isBgWhite={true} />
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <MultipleCards data={votorantinData} isBgWhite={true} />
+              </div>{" "}
             </Container>
           </Section>
           <Section>
@@ -215,7 +239,15 @@ const Home = () => {
           </Section>
           <Section>
             <Container>
-              <ButtonsWithInfo data={quartaData} isBgWhite={false} />
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <MultipleCards data={saoCamiloData} isBgWhite={false} />
+              </div>
             </Container>
           </Section>
           <Section>
@@ -234,11 +266,7 @@ const Home = () => {
             }}
           >
             <div className="ajustar-assinatura">
-            <img
-              src={assinaturas}
-              alt=""
-              className="assinatura"
-            />
+              <img src={assinaturas} alt="" className="assinatura" />
             </div>
           </div>
         </div>

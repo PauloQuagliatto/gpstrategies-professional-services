@@ -1,20 +1,14 @@
 import React from "react";
-import './styles.css';
+import "./styles.css";
 
-import logoImg from '../../../assets/images/logo/logo.png'
+import logoImg from "../../../assets/images/logo/logo.svg";
 
 const Logo = () => {
-    return (
-        <div className="logo">
-            <div className="logo-wrapper">
-                <h1 className="title">
-                    Projeto B2B<br/>
-                    Training
-                </h1>
-            </div>
-            <img src={logoImg} alt="logo" />
-        </div>
-    )
-}
+  return (
+    <div className="logo">
+      <img src={logoImg} alt="logo" />
+    </div>
+  );
+};
 
-export default Logo
+export default Logo;

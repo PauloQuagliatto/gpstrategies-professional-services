@@ -144,3 +144,10 @@ img.retranca {
   button {
     cursor: pointer;
   }
+
+  
+@media (max-width: 792px) {
+  .assinatura {
+    width: 100%;
+  }
+}
