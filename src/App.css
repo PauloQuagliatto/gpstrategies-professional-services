@@ -59,11 +59,11 @@ button.btn {
 }
 
 p {
-  font-size: 1.3rem;
+  font-size: 1.2rem !important;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2.5rem !important;
 }
 
 @media screen and (max-width: 768px) {

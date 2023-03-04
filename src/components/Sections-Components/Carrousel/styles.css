@@ -1,0 +1,96 @@
+.carrousel {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.carrousel .item {
+    background-color: #000;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.carrousel .item h3 {
+    background-color: #370054;
+    color: #fe9901;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.carrousel .item p {
+    background-color: #660099;
+    padding: 2rem 1rem;
+    font-size: 1.2rem;
+}
+
+.carrousel .item[value="4"] p,
+.carrousel .item[value="5"] p,
+.carrousel .item[value="6"] p {
+    color: #370054;
+    background-color: #b3d682;
+}
+
+.carrousel .controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrousel .controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.carrousel .controls button img {
+    width: 6rem;
+}
+
+.carrousel .controls button.next img {
+    transform: scaleX(-1);
+}
+
+.carrousel .slick-track {
+    display: flex;
+    gap: 1.3rem;
+}
+
+.carrousel .slick-dots {
+    bottom: -2rem;
+    left: 0;
+}
+
+.carrousel .slick-dots li {
+    margin: 0 3px;
+}
+
+.carrousel .slick-dots li.slick-active button:before {
+    color: #fe9901;
+    opacity: 1;
+}
+
+.carrousel .slick-dots li button:before {
+    font-size: 22px;
+    color: #660099;
+    opacity: .4;
+}
+
+@media screen and (max-width: 768px) {
+    .carrousel {
+        width: 100%;
+    }
+
+    .carrousel .controls {
+        display: none;
+    }
+
+    .carrousel .slick-track {
+        gap: .5rem;
+    }
+}

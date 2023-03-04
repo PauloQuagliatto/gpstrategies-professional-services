@@ -13,12 +13,11 @@ import Home from './pages/Home'
 // Import SCORM Hook
 import useScorm from './hooks/useScorm'
 
-
 function App() {
   const { scorm } = useScorm()
 
   useEffect(() => {
-    (async function () {
+    (async function() {
       await scorm.init()
     })()
 
@@ -29,7 +28,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path='/*' element={<Home />} />
+        <Route path='*' element={<Home />} />
       </Routes>
     </div>
   )
