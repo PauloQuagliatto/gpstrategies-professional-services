@@ -1,0 +1,146 @@
+.saiba-mais {
+    width: 100%;
+    max-width: 30rem;
+    margin: 4rem 0;
+    padding: 2rem 3rem;
+    position: relative;
+}
+
+.saiba-mais h3 {
+    color: #ed3e81;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.saiba-mais h3 span {
+    margin-left: -2rem;
+    color: #660099;
+}
+
+.saiba-mais h3 + h3 {
+    margin-bottom: 2rem;
+}
+
+.saiba-mais p {
+    position: relative;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: #660099;
+    backdrop-filter: blur(20px);
+}
+
+.saiba-mais p::after {
+    content: '';
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.saiba-mais button {
+    background-color: #660099;
+    color: #fff;
+    position: absolute;
+    letter-spacing: .1rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: .5rem 3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.saiba-mais button:hover {
+    background-color: #461E5D;
+    color: #fff;
+}
+
+.modal-overlay {
+    background-color: rgba(0,0,0,.5);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #fff;
+    width: 100%;
+    max-width: 30rem;
+    margin: 0 10px;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.modal-content button.close {
+    background-color: #fff;
+    color: #660099;
+    border: 2px solid #660099;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.modal-content button.close:hover {
+    color: #fff;
+    background-color: #660099;
+}
+
+@media screen and (max-width: 768px) {
+    .saiba-mais {
+        padding: 0;
+        padding-bottom: 7rem;
+        margin: 0 auto;
+        margin-top: 17rem;
+    }
+
+    .saiba-mais h3 {
+        position: relative;
+        backdrop-filter: blur(20px);
+    }
+
+    .saiba-mais h3::after {
+        content: '';
+        background-color: rgba(255, 255, 255, .5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+    }
+
+    .saiba-mais h3 span {
+        margin-left: 0rem;
+    }
+
+    .saiba-mais p::after {
+        background-color: rgba(255,255,255,.5);
+    }
+}
