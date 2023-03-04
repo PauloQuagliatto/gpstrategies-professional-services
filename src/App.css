@@ -20,18 +20,19 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #461E5D;
+  background: #fff;
+  border-radius: 1rem;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #F44881;
+  background: #FE9901;
   border-radius: 1rem;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #c03664;
+  background: #db8300;
 }
 
 button.btn {
@@ -46,19 +47,24 @@ button.btn {
   position: relative;
 }
 
-/* button.btn:after {
-  --size: 2rem;
+.video-react {
+  margin: 3rem auto;
+  /* max-width: 45rem !important; */
+}
 
-  content: '';
-  position: absolute;
-  background-image: url('./assets/images/hand.png');
-  background-size: cover;
-  width: var(--size);
-  height: var(--size);
-  top: 50%;
-  right: calc((var(--size) * -1) - .4rem);
-  transform: translateY(-50%);
-} */
+.video-react .video-react-big-play-button {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
 
 @media screen and (max-width: 768px) {
   button.btn {

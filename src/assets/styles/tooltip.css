@@ -1,0 +1,12 @@
+.personal-tooltip {
+    background-color: #660099;
+    backdrop-filter: blur(10px);
+    max-width: 30rem;
+    z-index: 999;
+}
+
+.personal-tooltip p {
+    color: #fff !important;
+    padding: 0;
+    font-size: 1rem;
+}

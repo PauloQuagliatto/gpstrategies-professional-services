@@ -38,33 +38,34 @@ const Tooltip = () => {
                     }}
                 ><span>+</span></button>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia mollitia sed dolorum minima repellat, magni porro dolor, 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia mollitia sed dolorum minima repellat, magni porro dolor,
                     vitae perspiciatis eligendi nostrum. Corrupti eaque excepturi nihil totam blanditiis, molestias cum.
                 </p>
             </div>
-            <Player src={ videoSource } />
+            <Player src={videoSource} />
             <div className="button-with-text">
                 <button id="tooltip-2"
                     onMouseEnter={() => {
                         !isOpen && setIsOpen(true)
                         setAnchorId('tooltip-2')
-                    }}
-                ><span>+</span></button>
+                    }}>
+                    <span>+</span>
+                </button>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia mollitia sed dolorum minima repellat, magni porro dolor, 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officia mollitia sed dolorum minima repellat, magni porro dolor,
                     vitae perspiciatis eligendi nostrum. Corrupti eaque excepturi nihil totam blanditiis, molestias cum.
                 </p>
             </div>
-            <TooltipElement 
-                anchorId={ anchorId }
-                isOpen={ isOpen }
-                float={ tooltipConfigs.float }
-                className={ tooltipConfigs.class }
-                clickable={ tooltipConfigs.clickable }
-                delayHide={ tooltipConfigs.delayHide }
-                    >
-                <h6>{ dataTooltip[0].title }</h6>
-                <p>{ dataTooltip[0].paragraph }</p>
+            <TooltipElement
+                anchorId={anchorId}
+                isOpen={isOpen}
+                float={tooltipConfigs.float}
+                className={tooltipConfigs.class}
+                clickable={tooltipConfigs.clickable}
+                delayHide={tooltipConfigs.delayHide}
+            >
+                <h6>{dataTooltip[0].title}</h6>
+                <p>{dataTooltip[0].paragraph}</p>
                 <button onClick={handleTooltipClose}>fechar</button>
             </TooltipElement>
         </div>

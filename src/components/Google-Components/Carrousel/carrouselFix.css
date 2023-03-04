@@ -1,0 +1,72 @@
+.slick-dots {
+    position: absolute;
+    bottom: -25px;
+    display: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+
+    bottom: -2.5rem;
+    left: 0;
+}
+
+ .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 10px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    -webkit-font-smoothing: antialiased;
+
+    border-radius: 20px !important;
+    opacity: 1  !important;
+    font-size: 1rem  !important;
+    color: #FFFFFF !important;
+    transition: color 0.3s;
+}
+
+.slick-dots .slick-active button:before {
+    color: #FF98B3 !important;
+}
+
+.div-flex4 .slick-dots li button:before, .div-flex5 .slick-dots li button:before,
+.dlp-content .slick-dots li button:before, .div-flex5 .slick-dots li button:before {
+    color: #660099 !important;
+}
+.div-flex4  .slick-dots .slick-active button:before, .div-flex5  .slick-dots .slick-active button:before,
+.dlp-content  .slick-dots .slick-active button:before, .div-flex5  .slick-dots .slick-active button:before {
+    color: #FF98B3 !important;
+}

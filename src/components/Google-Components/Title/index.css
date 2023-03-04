@@ -1,0 +1,43 @@
+.title {
+  margin: 0vw auto;
+  text-align: center;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  font-size: 2.2rem !important;
+}
+  
+.paragraph {
+  margin: auto;
+  text-align: center;
+  margin-top: 3vw;
+  margin-bottom: 2vw;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  font-size: 1.5rem !important;
+  margin-bottom: 3vw;
+}
+
+  span {
+    font-weight: bolder;
+  }
+
+
+  .span-purple span{
+    color: #660099;
+  }
+
+  .span-purple2 span{
+    color: #BD4AFF;
+  }
+  
+  .span-white span{
+    color: #FFFF;
+  }
+
+  .span-green span {
+    color: #b3d683;
+}
+
+

@@ -1,8 +1,10 @@
+import React from 'react';
+
 // Icons
-import icon1 from '../assets/images/horizontalAccordion/icon-1.png';
-import icon2 from '../assets/images/horizontalAccordion/icon-2.png';
-import icon3 from '../assets/images/horizontalAccordion/icon-3.png';
-import icon4 from '../assets/images/horizontalAccordion/icon-4.png';
+import { ReactComponent as Icon1 } from '../assets/images/horizontalAccordion/icon-1.svg';
+import { ReactComponent as Icon2 } from '../assets/images/horizontalAccordion/icon-2.svg';
+import { ReactComponent as Icon3 } from '../assets/images/horizontalAccordion/icon-3.svg';
+
 
 const colors = {
     lightBlue: 'rgba(0, 177, 244, 1)',
@@ -15,30 +17,23 @@ const colors = {
 export const data = [
     {
         orientation: 'left',
-        image: icon1,
-        title: 'Nativo da nuvem',
-        description: 'Funciona em qualquer dispositivo que tenha um navegador web, seja on-line ou off-line.',
+        image: <Icon1 />,
+        title: 'Moeda local',
+        description: 'A cobrança do serviço é feita em real, sem interferência da cotação do dólar.',
         color: colors.green
     },
     {
         orientation: 'left',
-        image: icon2,
-        title: 'Nativo da nuvem2',
-        description: 'Funciona em qualquer dispositivo que tenha um navegador web, seja on-line ou off-line.',
+        image: <Icon2 />,
+        title: 'Pagamento',
+        description: 'Além do cartão de crédito, oferece pagamento em débito automático ou boleto bancário.',
         color: colors.yellow
     },
     {
-        orientation: 'right',
-        image: icon3,
-        title: 'Nativo da nuvem3',
-        description: 'Funciona em qualquer dispositivo que tenha um navegador web, seja on-line ou off-line.',
+        orientation: 'left',
+        image: <Icon3 />,
+        title: 'Sem impostos',
+        description: 'Cobrança livre de taxas de compra internacional, como o IOF.',
         color: colors.yellow
-    },
-    {
-        orientation: 'right',
-        image: icon4,
-        title: 'Nativo da nuvem4',
-        description: 'Funciona em qualquer dispositivo que tenha um navegador web, seja on-line ou off-line.',
-        color: colors.red
     },
 ]

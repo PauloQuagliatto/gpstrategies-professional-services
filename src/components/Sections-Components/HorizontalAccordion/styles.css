@@ -2,6 +2,8 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 3rem 0;
+    margin-bottom: 15rem;
 }
 
 .horizontal-accordion .accordion {
@@ -15,9 +17,14 @@
     flex-direction: row-reverse;
 }
 
-.horizontal-accordion .accordion img {
-    width: 7rem;
+.horizontal-accordion .accordion .svg-div {
     z-index: 2;
+}
+
+.horizontal-accordion .accordion img,
+.horizontal-accordion .accordion svg {
+    position: relative;
+    width: 7rem;
     cursor: pointer;
 }
 
@@ -34,16 +41,21 @@
 
 .horizontal-accordion .accordion.show .content-wrapper {
     transition: ease-out .5s;
+    height: 100%;
     transform: scale(1, 1);
     position: relative;
     opacity: 1;
 }
 
 .horizontal-accordion .accordion .content {
-    color: #7d05a4;
+    color: #fff;
     padding: 1rem 3rem;
     width: 100%;
+    position: relative;
+    min-height: 7rem; /* mesmo tamanho da imagem */
     user-select: none;
+    display: flex;
+    align-items: center;
 }
 
 .horizontal-accordion .accordion[orientation="right"] .content-wrapper {
@@ -56,11 +68,14 @@
 }
 
 .horizontal-accordion .accordion[orientation="left"] .content {
-    background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 25%);
+    background: linear-gradient(270deg, rgba(103,0,153,0.7) 0%, rgba(103,0,153,0.1) 100%);
+    border-radius: 20rem;
+        margin-left: -6rem;
+    width: calc(100% + 6rem);
 }
 
 .horizontal-accordion .accordion[orientation="left"] .content .inner {
-    margin-left: 5rem;
+    margin-left: 7rem;
 }
 
 .horizontal-accordion .accordion[orientation="right"] .content-wrapper {
@@ -72,7 +87,8 @@
 }
 
 .horizontal-accordion .accordion[orientation="right"] .content {
-    background: linear-gradient(to left, rgba(0,0,0,0) 0%, rgba(255,255,255,1) 25%);
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%, #670099 50%);
+    border-radius: 3rem 0rem 0rem 3rem;
 }
 
 .horizontal-accordion .accordion[orientation="left"] .content-wrapper .outer,
@@ -96,11 +112,14 @@
 
 .horizontal-accordion .accordion .content h5 {
     font-size: 1.2rem;
+    color: #670099;
+    margin-bottom: 1rem;
     font-weight: 700;
 }
 
 .horizontal-accordion .accordion .content p {
     font-size: 1rem;
+    color: #000;
     font-weight: 500;
     line-height: 1;
 }

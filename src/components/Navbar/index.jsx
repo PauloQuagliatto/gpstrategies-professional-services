@@ -15,48 +15,38 @@ const Navbar = () => {
             functions: () => updateMenu()
         },
         {
-            name: 'Abas',
-            to: 'tab',
+            name: 'Workspace',
+            to: 'targetMenu',
             functions: () => updateMenu()
         },
         {
-            name: 'Carrossel',
-            to: 'carrousel',
+            name: 'Produtividade',
+            to: 'targetMenu2',
             functions: () => updateMenu()
         },
         {
-            name: 'Acordeon',
-            to: 'accordion',
+            name: 'Segurança',
+            to: 'targetMenu3',
             functions: () => updateMenu()
         },
         {
-            name: 'Carrossel Circular',
-            to: 'circular-carrousel',
+            name: 'Público Alvo',
+            to: 'targetMenu4',
             functions: () => updateMenu()
         },
         {
-            name: 'Slider Show Down',
-            to: 'show-down-slider',
+            name: 'Business',
+            to: 'targetMenu5',
             functions: () => updateMenu()
         },
         {
-            name: 'Tooltip / Vídeo',
-            to: 'tooltip',
+            name: 'Eficiência',
+            to: 'targetMenu6',
             functions: () => updateMenu()
         },
         {
-            name: 'Flip Cards',
-            to: 'flip-cards',
-            functions: () => updateMenu()
-        },
-        {
-            name: 'Saiba Mais',
-            to: 'saiba-mais',
-            functions: () => updateMenu()
-        },
-        {
-            name: 'Escrolável / DnD',
-            to: 'scrollable',
+            name: 'Atendimento',
+            to: 'targetMenu7',
             functions: () => updateMenu()
         },
     ]

@@ -10,8 +10,7 @@ const Section = ({
     id, 
     lineBG = '', 
     bgMask = 'none',
-    customClass = '',
-    bgCover = ''
+    customClass = ''
 }) => {
     return (
         <section 
@@ -25,7 +24,6 @@ const Section = ({
             }} id={ id }>
             <div className="section-mask" style={{
                 backgroundImage: `url(${bgMask})`,
-                background: bgCover
             }}>
                 { children }
             </div>

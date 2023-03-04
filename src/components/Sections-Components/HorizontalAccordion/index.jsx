@@ -20,7 +20,9 @@ const HorizontalAccordion = () => {
                 <div className={`accordion ${ accordion[index].display ? 'show' : '' }`} 
                     orientation={item.orientation} 
                     key={index}>
-                    <img src={item.image} alt={item.title} onClick={ () => onClick(index) } />
+                    <div className="svg-div" onClick={ () => onClick(index) }>
+                        {item.image}
+                    </div>
                     <div className="content-wrapper">
                         <div className="content">
                             <div className="inner">
@@ -28,7 +30,7 @@ const HorizontalAccordion = () => {
                                 <p>{ item.description }</p>
                             </div>
                         </div>
-                        <div className="outer" style={{background: `linear-gradient(to ${item.orientation === 'left' ? 'right' : 'left'}, rgba(0,0,0,0) 0%, ${ item.color } 25%)`}}></div>
+                        {/* <div className="outer" style={{background: `linear-gradient(to ${item.orientation === 'left' ? 'right' : 'left'}, rgba(0,0,0,0) 0%, ${ item.color } 25%)`}}></div> */}
                     </div>
                 </div>
             )) }
