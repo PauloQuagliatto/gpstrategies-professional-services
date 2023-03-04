@@ -6,7 +6,6 @@ img.retranca {
   z-index: 10;
 }
 
-
 .darken-section-end {
   height: 17rem;
   width: 100%;
@@ -21,6 +20,16 @@ img.retranca {
 
 .maskara {
   background: url(../../assets/images/google/workspace/assinatura/maskara.png);
+}
+
+.ajustar-assinatura {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.assinatura {
+  transform: scaleX(-1);
 }
 
 .divMae {

@@ -3,27 +3,13 @@ import "./index.css";
 
 // Components
 import Section from "../../components/Section";
-import Carrousel from "../../components/Sections-Components/Carrousel";
 import Container from "../../components/Container";
-import DragAndDrop from "../../components/Sections-Components/DragAndDrop";
-import FlipCards from "../../components/Sections-Components/FlipCards";
 import Logo from "../../components/Sections-Components/Logo";
-import CircularCarrousel from "../../components/Sections-Components/CircularCarrousel";
-import SaibaMais from "../../components/Sections-Components/SaibaMais";
-import ShowDownSlider from "../../components/Sections-Components/ShowDownSlider";
-import ScrollableContent from "../../components/Sections-Components/ScrollableContent";
-import TimeLine from "../../components/Sections-Components/TimeLine";
-import Tooltip from "../../components/Sections-Components/Tooltip";
-import VerticalAccordion from "../../components/Sections-Components/VerticalAccordion";
 import ButtonsWithInfo from "../../components/Sections-Components/ButtonsWithInfo";
 
 // Backgrounds
 import smilingWomanImg from "../../assets/images/smiling-bussiness-woman.png";
-import bg1 from "../../assets/images/bg_1.png";
-import bg2branca from "../../assets/images/bg_2.png";
-import bg2branca2 from "../../assets/images/bg_3.png";
 import bg4branca from "../../assets/images/bg_4.png";
-import maskaraImg from "../../assets/images/google/workspace/assinatura/maskara.png";
 
 // Images
 import hyundaiLogo1 from "../../assets/images/hyundai-logo-1.png";
@@ -247,7 +233,13 @@ const Home = () => {
               transform: "matrix(-1, 0, 0, 1, 0, 0)",
             }}
           >
-            <img src={assinaturas} alt="" className="assinatura" />
+            <div className="ajustar-assinatura">
+            <img
+              src={assinaturas}
+              alt=""
+              className="assinatura"
+            />
+            </div>
           </div>
         </div>
       </div>
