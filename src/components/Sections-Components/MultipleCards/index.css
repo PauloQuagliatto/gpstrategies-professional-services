@@ -2,7 +2,7 @@
   position: relative;
   width: 77.313rem;
   height: 35.625rem;
-  padding: 3.438rem 7.75rem 3.438rem 5.5rem;
+  padding: 3.438rem 3.5rem 3.438rem 3.5rem;
   box-shadow: 20px 10px 20px #bd4aff;
   display: flex;
   justify-content: center;
@@ -64,14 +64,52 @@
   transform: scale(1.2);
 }
 
+
+@media (max-width: 1280px) {
+  .card-container {
+    width: 72%;
+    height: 112%;
+    padding: 1.2rem 2.5rem 6rem 2.5rem;
+  }
+
+  .card-content img {
+    width: 45%;
+    align-self: center;
+  }
+
+  .buttons-container {
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .buttons-container .button-image {
+    width: 5.4rem !important;
+  }
+}
+
 @media (max-width: 792px) {
   .card-container {
     width: 72%;
     height: 112%;
+    padding: 2.5rem 2.5rem 3.2rem 2.5rem;
   }
 
   .card-content img {
    display: none;
+  }
+
+
+  .text-container {
+    margin-left: 0 !important;
+    padding-bottom: 1.2rem;
+  }
+
+  .text-container h1 {
+    margin-top: 1.4rem;
   }
 
   .buttons-container {

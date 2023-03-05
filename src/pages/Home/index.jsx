@@ -62,10 +62,10 @@ const Home = () => {
             bgSize="100% 100%"
           >
             <Container>
-              <div className="flex">
+              <div id="hyundai" className="flex">
                 <div className="info-section">
                   <h1 style={{ color: "#660099" }}>Estudo de caso Hyundai</h1>
-                  <p style={{ fontSize: "1.875rem", color: "black" }}>
+                  <p className="text-normal" style={{ color: "black" }}>
                     Durante a pandemia, a Hyundai verificou que precisava fazer
                     uma modernização no ambiente de trabalho dos seus
                     colaboradores. Com grande parte da equipe em home office,
@@ -80,16 +80,10 @@ const Home = () => {
                   <img src={clickConceitos} alt="" />
                 </div>
                 <div
-                  className="logo-section"
-                  style={{
-                    marginRight: "-3rem",
-                  }}
-                >
+                  className="logo-section">
                   <img
                     src={hyundaiLogo1}
-                    style={{
-                      marginRight: "-6.625rem",
-                    }}
+                    alt="hyundai-logo"
                   />
                 </div>
               </div>
@@ -110,23 +104,18 @@ const Home = () => {
           </Section>
           <Section>
             <Container>
-              <div className="flex">
+              <div id="consul" className="flex">
                 <div
                   className="logo-section"
-                  style={{
-                    marginLeft: "-3rem",
-                  }}
                 >
                   <img
                     src={consulLogo1}
-                    style={{
-                      marginLeft: "-6.625rem",
-                    }}
+                    alt="logo-consul"
                   />
                 </div>
                 <div className="info-section" style={{ paddingLeft: "2rem" }}>
                   <h1>Estudo de caso Consul</h1>
-                  <p style={{ fontSize: "1.875rem", color: "white" }}>
+                  <p className="text-normal" style={{ color: "white" }}>
                     A Consul procurou a Vivo Empresas em busca de tecnologia e
                     suporte especializado para os seus pontos de venda incluindo
                     uma loja virtual. Com o fortalecimento do relacionamento da
@@ -160,12 +149,12 @@ const Home = () => {
             bgSize="100% 100%"
           >
             <Container>
-              <div className="flex">
+              <div id="votorantim" className="flex">
                 <div className="info-section">
                   <h1 style={{ color: "#660099" }}>
                     Estudo de caso Votorantim
                   </h1>
-                  <p style={{ fontSize: "1.875rem", color: "black" }}>
+                  <p className="text-normal" style={{ color: "black" }}>
                     A Votorantim é uma holding com empresas que possuem
                     autonomia na contratação de serviços, porém no caso do
                     contrato LSP Microsoft, por envolver grandes volumes, a
@@ -181,15 +170,10 @@ const Home = () => {
                 </div>
                 <div
                   className="logo-section"
-                  style={{
-                    marginRight: "-3rem",
-                  }}
                 >
                   <img
                     src={votorantinLogo1}
-                    style={{
-                      marginRight: "-6.625rem",
-                    }}
+                    alt="votorantin-logo"
                   />
                 </div>
               </div>
@@ -205,28 +189,23 @@ const Home = () => {
                 }}
               >
                 <MultipleCards data={votorantinData} isBgWhite={true} />
-              </div>{" "}
+              </div>
             </Container>
           </Section>
           <Section>
             <Container>
-              <div className="flex">
+              <div id="sao-camilo" className="flex">
                 <div
                   className="logo-section"
-                  style={{
-                    marginLeft: "-3rem",
-                  }}
                 >
                   <img
                     src={saoCamiloLogo1}
-                    style={{
-                      marginLeft: "-6.625rem",
-                    }}
+                    alt="sao-camilo-logo"
                   />
                 </div>
                 <div className="info-section" style={{ paddingLeft: "2rem" }}>
                   <h1>Estudo de caso Hospital São Camilo</h1>
-                  <p style={{ fontSize: "1.875rem", color: "white" }}>
+                  <p className="text-normal" style={{ color: "white" }}>
                     Entender o momento de um setor que foi fortemente impactado
                     pela pandemia, em diversos aspectos, foi essencial para
                     atender a todos os desafios colocados na concorrência pelo
